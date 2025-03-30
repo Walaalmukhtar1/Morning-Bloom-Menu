@@ -1,0 +1,263 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background-color: #F1DDBE;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+.content {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("https://transparenttextures.com/patterns/concrete-wall.png");
+  }
+
+
+header img {
+  display: inline-block;
+  width: min(200px, 200px);
+  border-radius: 50%;
+  margin: 1rem;
+  z-index: 1;
+  }
+
+header h3 {
+  font-family: "Fascinate", system-ui; 
+  letter-spacing: 3px;
+  font-size: 1.2rem;
+  color: #442a00;
+  background-color: transparent;
+}
+header p {
+  font-family: "Poppins", sans-serif;    
+  letter-spacing: 2px;
+  font-size: 1rem;
+  color: #442a00;
+  background-color: transparent;
+}
+
+
+.line-with-text {
+  height: 4px;              
+  background-color: #936F38;   
+  border: none;             
+  width: 80%;
+  margin: 20px auto;
+  text-align: center; 
+  line-height: 0.1em;
+  
+}
+  
+.line-with-text span {
+  background-color: #F1DDBE; 
+  padding: 0 15px;
+  font-family: "Fascinate", system-ui;
+  color: #8B5C2D;
+  font-size: 1.5rem;
+  background-image: url("https://transparenttextures.com/patterns/concrete-wall.png");
+}
+
+.contact {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 10px;
+  margin: 1rem;
+  margin-bottom: 4rem;
+}
+
+.contact i {
+  opacity: 1;
+  font-size: 1.5rem;
+  color: #442a00;
+  transition: color 0.3s;
+}
+    
+.contact i:hover {
+  color: #936F38;
+}
+
+.meals{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2rem;
+  background-image: url("https://transparenttextures.com/patterns/concrete-wall.png");
+  
+}
+
+.meal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  background-image: url("https://transparenttextures.com/patterns/concrete-wall.png");
+}
+
+.meal.reverse {
+  flex-direction: row-reverse;
+}
+
+.meal img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.text {
+  max-width: 500px;
+  font-family: "Poppins", sans-serif;
+  color: #472c00;
+  background-color: transparent;
+}
+.text h3, h2, p{
+  background-color: transparent;
+}
+.text h2{
+color: #8B5C2D;
+font-size: 1.7rem;
+}
+.text p{
+color: #8B5C2D;}
+
+.text h3 {
+  margin-top: 1.5rem;
+}
+
+audio {
+  width: 250px;
+}
+
+.audio-styling {
+  padding: 10px;
+  background-color: transparent;
+  background-image: url("https://transparenttextures.com/patterns/concrete-wall.png");
+  background-repeat: repeat;
+  border: transparent;
+  
+}
+audio::-webkit-media-controls-panel {
+  background-color: #f1ddbe; 
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: #8b5c2d;
+  border-radius: 50%;
+}
+
+/*SMALL*/
+@media screen and (max-width: 481px){
+  header img {
+    width: 150px;
+    }
+  header h3 {
+    font-size: 1.2rem;
+    }
+    .text h2 {
+      font-size: 1rem;
+      }
+    .text h3 {
+      font-size: .9rem;
+      }
+    .text p {
+      font-size: .6rem;
+      }
+      .meal img {
+        width: 150px;
+        height: auto;
+      }
+      .meals .meal .text img {
+        max-width: 12px;
+      }
+  .line-with-text span {
+    font-size: 1rem;
+    }
+    audio {
+      width: 180px;
+      height: 30px;
+    }
+    audio::-webkit-media-controls-play-button {
+      height: 30px;
+      max-width: 50px;
+    }
+}
+
+/*MEDUIM*/
+@media screen and (min-width: 481px) and (max-width: 991px){
+  header img {
+    width: 170px;
+    }
+  header h3 {
+    font-size: 1.5rem;
+    }
+    .text h2 {
+      font-size: 1.2rem;
+      }
+    .text h3 {
+      font-size: 1rem;
+      }
+    .text p {
+      font-size: .8rem;
+      }
+      .meal img {
+        width: 180px;
+        height: auto;
+      }
+      .meals .meal .text img {
+        max-width: 13px;
+      }
+  .line-with-text span {
+    font-size: 1.2rem;
+    }
+  audio {
+    width: 180px;
+    height: 30px;
+  }
+  audio::-webkit-media-controls-play-button {
+    height: 30px;
+    max-width: 50px;
+  }
+}
+
+
+
+
+/*LARGE*/
+@media screen and (min-width: 992px){
+  header img {
+    width: 200px;
+    }
+  header h3 {
+    font-size: 2.3rem;
+    }
+  .text h2 {
+    font-size: 1.7rem;
+    }
+  .text h3 {
+    font-size: 1.2rem;
+    }
+  .text p {
+    font-size: 1rem;
+    }
+    .meal img {
+      width: 200px;
+      height: auto;
+    }
+    .meals .meal .text img {
+      max-width: 15px;
+    }
+  .line-with-text span {
+      font-size: 1.8rem;
+    }
+}
